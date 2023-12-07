@@ -10,7 +10,7 @@ body{
 .container {
     position: absolute;
     left: 50%;
-    top: 60%; /* Adjust vertical position as needed */
+    top: 60%;
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 600px;
@@ -146,16 +146,8 @@ footer {
     .container {
         width: 90%;
         max-width: 90%;
-        padding: 10px;
-    }
-
-    .item {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .item .content {
-        width: 90%;
-    }
+        padding: 20px;
 }
+}
+
+
