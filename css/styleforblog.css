@@ -1,3 +1,15 @@
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
 body{
     background-color: black;
     margin: 0;
@@ -10,13 +22,14 @@ body{
 .container {
     position: absolute;
     left: 50%;
-    top: 60%; /* Adjust vertical position as needed */
+    top: 50%; /* Adjust vertical position as needed */
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 600px;
     padding: 50px;
     background-color: black;
     box-shadow: 0 10px 70px #dbdbdb;
+    z-index: 0;
 }
 
 #slide{
@@ -132,21 +145,25 @@ footer {
     background-color: black;
     color: white;
     padding: 20px;
-    margin-top: auto; 
+    margin-top: auto;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {
-    max-width: 800px; 
-    width: 100%; 
+    max-width: 800px;
+    width: 100%;
 }
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
         max-width: 90%;
         padding: 20px;
-}
+    }
 }
 
