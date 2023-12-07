@@ -15,6 +15,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
+    position: relative;
 }
 
 /* ITBlog styling */
@@ -26,6 +28,7 @@ header {
     padding: 20px;
     background-color: black;
     box-shadow: 0 10px 70px #dbdbdb;
+    z-index: 1;
 }
 
 #slide{
@@ -141,20 +144,13 @@ footer {
     background-color: black;
     color: white;
     padding: 20px;
-    margin-top: auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
+    position: relative;
 }
+
 
 .footer-content {
     max-width: 800px;
