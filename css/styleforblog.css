@@ -1,20 +1,29 @@
-body{
+body {
     background-color: black;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ITBlog styling */
 .container {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 600px;
-    padding: 50px;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: black;
     box-shadow: 0 10px 70px #dbdbdb;
 }
@@ -138,25 +147,25 @@ footer {
     align-items: center; 
 }
 
-.footer-content {
-    max-width: 800px; 
-    width: 100%; 
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.footer-content {
+    max-width: 800px;
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
         max-width: 90%;
         padding: 10px;
-    }
-
-    .item {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .item .content {
-        width: 90%;
     }
 }
 
