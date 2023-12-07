@@ -9,9 +9,9 @@ body {
 /* ITBlog styling */
 .container {
     position: relative;
-    width: 90%; /* Adjust according to your design */
-    max-width: 1000px; /* Adjust according to your design */
-    margin: 20px auto; /* Center the container */
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
     padding: 20px;
     background-color: black;
     box-shadow: 0 10px 70px #dbdbdb;
@@ -21,21 +21,17 @@ body {
     width: max-content;
     margin-top: 20px;
 }
-.item{
-    width:200px;
-    height:300px;
-    background-position: 50% 50%;
+.item {
+    width: 100%;
+    height: 300px;
     display: inline-block;
     transition: 0.5s;
     background-size: cover;
-    position: absolute;
-    z-index: 1;
-    top:50%;
-    transform: translate(0,-50%);
+    position: relative;
+    margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow:  0 10px 70px #505050;
+    box-shadow: 0 10px 70px #505050;
 }
-
 .item {
     width: 100%;
     height: 300px;
@@ -69,18 +65,19 @@ body {
     left:calc(50% + 660px);
     opacity: 0;
 }
-.item .content{
-    position: absolute;
-    top:50%;
-    left:100px;
-    width:300px;
-    text-align: left;
-    padding:0;
-    color:#eee;
-    transform: translate(0,-50%);
+.item .content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    color: #eee;
     display: none;
     font-family: system-ui;
 }
+
 .item:nth-child(2) .content{
     display: block;
     z-index: 11111;
@@ -164,4 +161,7 @@ footer {
         border-radius: 10px;
     }
 
+    .item .content {
+        width: 90%; 
+    }
 }
