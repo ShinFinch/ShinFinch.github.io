@@ -163,7 +163,16 @@ footer {
     .container {
         width: 90%;
         max-width: 90%;
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .item .content {
+        width: 90%;
     }
 }
-
