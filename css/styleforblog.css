@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2; /* Higher z-index for the header */
-    position: fixed;
+    z-index: 2;
+    position: sticky;
     top: 0;
     width: 100%;
 }
